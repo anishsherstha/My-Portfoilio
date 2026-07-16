@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
+        <div class="header-container">
+        <div class="logo">
         <img src="images/logo.png" alt="logo" width="80">
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -16,33 +20,42 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-                <form>
+        </nav>
+        <div class="search-bar">
+             <form>
                     <input type="text" placeholder="Search">
                     <button type="submit">Search</button>
-                </form>
-        </nav>
+             </form>
+            </div>
+    </div>
     </header>
-    <hr>
+
     <main>
         <section id="home">
+        <div class="home-container">
+        <div class="home-text">
         <h1>Hello, I'm Anish Shrestha</h1>
         <p>
             Bachelor of Information Technology (BIT) student at Model Institute of 
             Technology (MIT),Nepal. Passionate about Programming, Cloud Computing, 
             Game Development and Web Development
         </p>
-        </section>
+        </div>
     
         <img src="images/PI.png" alt="PI" width="300">
-        <hr>
+    
+        </div>
+        </section>
+
         <section id="about">
+        <div class="about-container">
         <h1>About Me</h1>
         <h2>Hello, I'm Anish Shrestha</h2>
         
             <p>
             I am Anish Shrestha, a Bachelor of Information Technology (BIT)
             student at Model Institute of Technology (MIT), Nepal.
-            I enjoy learning new technologies and improving my skills through
+            I enjoy learning new technologies and improving my skills throug
             practical projects and coursework.
         </p>
 
@@ -52,28 +65,41 @@
             I am constantly exploring modern technologies and building projects
             that help strengthen my technical abilities.
         </p>
+        </div>
         </section>
-        <hr>
+
 
         <section id="interests">
-        <h1>My Interests</h1>
-            <dl>
+        <div class="interests-container">
+        
+        <h1 class="interest-heading">My Interests</h1>
+         <div class="interests-grid">
+            <div class="interests-card">
             <dt>Programming</dt>
             <dd>C, C++, Java, Python</dd>
+            </div>
 
+            <div class="interests-card">
             <dt>Web Development</dt>
             <dd>HTML, CSS, JavaScript</dd>
+            </div>
 
+            <div class="interests-card">
             <dt>Cloud Computing</dt>
             <dd>AWS Fundamentals & Cloud Concepts</dd>
+            </div>
 
+            <div class="interests-card">
             <dt>Game Development</dt>
             <dd>Learning Game Design & Development</dd>
-            </dl>
+            </div>
+           
+        </div>
+        </div>
         </section>
-        <hr>
 
         <section id="projects">
+        <div class="projects-container">
         <h1>My Projects</h1>
         <article>
             <h2>Expense Tracker System</h2>
@@ -99,30 +125,37 @@
             </p>
             <p><a href="https://github.com/anishsherstha/game.git" target="_blank">View on GitHub</a></p>
         </article>
+        </div>
         </section>
-        <hr>
 
         <section id="contact">
+       
+        <div class="contact-container">
          <h1>Contact Me</h1>
-        
-        <label>Full Name </label><br>
-        <input type="text" name="fullname" placeholder="John Doe"><br><br>
+        <form>
+        <label>Full Name </label>
+        <input type="text" name="fullname" placeholder="John Doe">
 
-        <label>Email Address</label><br>
-        <input type="email" name="email" placeholder="john.doe@example.com"><br><br>
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="john.doe@example.com">
 
-        <label>Message</label><br>
-        <textarea rows="5" cols="30"></textarea><br><br>
-        <button type="submit">Submit</button><br><br>
+        <label>Message</label>
+        <textarea rows="5" cols="30"></textarea>
+        <button type="submit">Submit</button>
+        </form>
+        </div>
         </section>
-
-
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.jpeg" alt="Facebook" width="30"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/ist.png" alt="Instagram" width="30"></a>
-        <a href="https://github.com/anishsherstha" target="_blank"><img src="images/github.png" alt="GitHub" width="30"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="images/id.jpg" alt="LinkedIn" width="30"></a>
-        
-        <hr>
+        <section id="follow">
+            <div class="follow-container">
+          <h1 class="social-section">Follow me</h1>
+        <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.jpeg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/ist.png" alt="Instagram"></a>
+                <a href="https://github.com/anishsherstha" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/id.jpg" alt="LinkedIn"></a>
+            </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Anish Shrestha. All rights reserved.</p>
